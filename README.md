@@ -20,7 +20,7 @@ The project relies on the following dependencies:
 1. Clone the repository:
 
 ```
-
+git clone https://github.com/rapesil/test-cafe-study.git
 ```
 
 2. Install the dependencies:
@@ -33,9 +33,9 @@ npm install
 
 1. Create a `.env` file in the project's root directory and define the necessary environment variables. For example:
 
-> VALID_USERNAME=standard_user
-USERNAME_BLOCK=locked_out_user
-VALID_PASSWORD=secret_sauce
+> VALID_USERNAME=standard_user  
+USERNAME_BLOCK=locked_out_user  
+VALID_PASSWORD=secret_sauce  
 
 2. Run the tests:
 
