@@ -33,9 +33,13 @@ npm install
 
 1. Create a `.env` file in the project's root directory and define the necessary environment variables. For example:
 
-> VALID_USERNAME=standard_user  
+```
+VALID_USERNAME=standard_user  
 USERNAME_BLOCK=locked_out_user  
 VALID_PASSWORD=secret_sauce  
+```
+
+> I know, the username and password are openly displayed on the test login page, but I want to use `.env` to provide an example of how to hide sensitive data in my project.
 
 2. Run the tests:
 
@@ -49,6 +53,3 @@ This command will execute the TestCafe tests defined in the project.
 
 Contributions to this study project are welcome! Feel free to submit bug reports, suggestions, or pull requests.
 
-## Disclaimer
-
-Please note that this project is for educational purposes only and should not be considered as a production-ready application.
