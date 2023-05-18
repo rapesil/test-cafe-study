@@ -1,10 +1,12 @@
 {
   "name": "saucedemo-testcafe",
   "version": "1.0.0",
-  "description": "",
+  "description": "testcafe study project",
   "main": "login-page.js",
   "scripts": {
-    "test": "testcafe chrome src/tests/"
+    "test": "testcafe chrome src/tests/",
+    "test:home": "npm run test -- src/test/home-spec.js",
+    "test:cart": "npm run test -- src/tests/cart-spec.js"
   },
   "author": "",
   "license": "MIT",

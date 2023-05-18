@@ -4,8 +4,8 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-fixture('Sauce Demo Login')
-    .page('https://www.saucedemo.com');
+fixture`Sauce Demo Login`
+    .page`https://www.saucedemo.com`;
 
 
 test('Login successfully', async t => {

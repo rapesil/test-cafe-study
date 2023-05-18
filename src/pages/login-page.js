@@ -10,6 +10,7 @@ class LoginPage {
         await t.typeText('#user-name', user);
         await t.typeText('#password', pass);
         await t.click('#login-button');
+        return this;
     }
 };
 
