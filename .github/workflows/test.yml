@@ -1,0 +1,25 @@
+name: TestCafe
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  VALID_USERNAME: ${{ secrets.VALID_USERNAME }}
+  USERNAME_BLOCK: ${{ secrets.USERNAME_BLOCK }}
+  VALID_PASSWORD: ${{ secrets.VALID_PASSWORD }}
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm install
+      - uses: DevExpress/testcafe-action@latest
+        with:
+          args: "chrome src/tests/"
